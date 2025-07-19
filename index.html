@@ -34,7 +34,7 @@
             padding: 0;              /* Sin padding */
         }
 
-        /* --- Aquí está la animación --- */
+        /* --- animacion de latidos --- */
         @keyframes latido {
             0% {
               transform: scale(1);
@@ -50,6 +50,31 @@
         .animacion-latido {
             animation: latido 1s infinite;
         }
+        /* --- INTRODUCION TEXTO ANI --- */
+        p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+        <p>
+  Advertencia: este blog es una paradoja interdimensional. La idea para crearlo se encontró en un futuro post que aún no he escrito, 
+  y el código que lo sostiene es el eco de una estrella que todavía no ha nacido. Al entrar, no estás simplemente leyendo texto;
+   estás navegando por un universo de bolsillo que existe solo porque tú has decidido que exista. El final de la página es, en realidad, su comienzo.
+</p>
+
+
     </style>
 
 </head>
