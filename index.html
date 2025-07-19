@@ -78,13 +78,23 @@
       transform: translateY(0) scale(1);
     }
   }
+/* ... tu CSS anterior ... */
+
+  @keyframes flotar {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-15px) scale(1.02);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
 
   .animacion-flotar {
     animation: flotar 3s infinite ease-in-out; /* Aplica la animación 'flotar' durante 3 segundos, la repite infinitamente, con un efecto suave */
   }
-animation-duration: 3s;
-animation-name: slidein;
-<style>
   /* ... tu CSS anterior (incluyendo @keyframes flotar) ... */
 
   @keyframes rotarSuave {
@@ -99,7 +109,8 @@ animation-name: slidein;
   .animacion-rotar-suave {
     animation: rotarSuave 5s infinite linear; /* Aplica la animación 'rotarSuave' durante 5 segundos, la repite infinitamente, con un movimiento constante */
   }
-</style>
+  
+
     </style>
 
 </head>
@@ -127,7 +138,7 @@ animation-name: slidein;
     
     <img src="XD.jpg" alt="un gatito" class="animacion-latido">
     <img src="XD2.jpg" alt="YO  otra vez" class="animacion-flotar">
-    <img src="XD3.jpg" alt="YO  otra vez" class="animacion-rotar-suave">
+    <img src="XD3.jpg" alt="YO  otra vez" class="animacion-latido">
 
 </body>
 </html>
