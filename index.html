@@ -23,6 +23,34 @@
             border-radius: 15px;       /* Bordes redondeados */
             margin-top: 20px;          /* Espacio arriba de la imagen */
         }
+        <style>
+  /* ... tu CSS anterior ... */
+  @keyframes latido {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .animacion-latido {
+    animation: latido 1s infinite; /* Aplica la animación 'latido' durante 1 segundo y la repite infinitamente */
+  }
+</style>
+        h2 {
+            color: #f1c40f;          /* Color amarillo para subtítulos */
+        }
+        ul {
+            list-style-type: none;   /* Sin viñetas en la lista */
+            padding: 0;              /* Sin padding */
+        }
+        p {
+            margin: 10px 0;          /* Espacio entre párrafos */
+        }
     </style>
 
 </head>
@@ -41,9 +69,8 @@
 
     <a href="https://github.com/mario123s">vean mi perfil po :3</a>
 
-<img src="XD.jpg" alt="un gatito">
+<img src="XD.jpg" alt="un gatito" class="animacion-latido">
 <img src="XD2.jpg" alt="YO otra vez">
 <img src="XD3.jpg" alt="YO otra vez">
-
 </body>
 </html>
