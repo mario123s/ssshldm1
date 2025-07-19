@@ -25,6 +25,10 @@
             border: 5px solid #ecf0f1; /* Borde blanco para la imagen */
             border-radius: 15px;       /* Bordes redondeados */
             margin-top: 20px;          /* Espacio arriba de la imagen */
+
+            /* LÍNEAS AGREGADAS PARA CAMBIAR EL TAMAÑO */
+            width: 250px;              /* Ancho de la imagen en píxeles */
+            height: auto;              /* El alto se ajusta automáticamente */
         }
         p {
             margin: 10px 0;          /* Espacio entre párrafos */
@@ -37,13 +41,13 @@
         /* --- animacion de latidos --- */
         @keyframes latido {
             0% {
-              transform: scale(1);
+                transform: scale(1);
             }
             50% {
-              transform: scale(1.05);
+                transform: scale(1.05);
             }
             100% {
-              transform: scale(1);
+                transform: scale(1);
             }
         }
 
@@ -52,65 +56,62 @@
         }
         /* --- INTRODUCION TEXTO ANI --- */
         p {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        @keyframes flotar {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-15px) scale(1.02);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+            }
+        }
+        /* ... tu CSS anterior ... */
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes flotar {
-    0% {
-      transform: translateY(0) scale(1);
-    }
-    50% {
-      transform: translateY(-15px) scale(1.02);
-    }
-    100% {
-      transform: translateY(0) scale(1);
-    }
-  }
-/* ... tu CSS anterior ... */
+        @keyframes flotar {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-15px) scale(1.02);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+            }
+        }
 
-  @keyframes flotar {
-    0% {
-      transform: translateY(0) scale(1);
-    }
-    50% {
-      transform: translateY(-15px) scale(1.02);
-    }
-    100% {
-      transform: translateY(0) scale(1);
-    }
-  }
+        .animacion-flotar {
+            animation: flotar 3s infinite ease-in-out; /* Aplica la animación 'flotar' durante 3 segundos, la repite infinitamente, con un efecto suave */
+        }
+        /* ... tu CSS anterior (incluyendo @keyframes flotar) ... */
 
-  .animacion-flotar {
-    animation: flotar 3s infinite ease-in-out; /* Aplica la animación 'flotar' durante 3 segundos, la repite infinitamente, con un efecto suave */
-  }
-  /* ... tu CSS anterior (incluyendo @keyframes flotar) ... */
+        @keyframes rotarSuave {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
-  @keyframes rotarSuave {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .animacion-rotar-suave {
-    animation: rotarSuave 5s infinite linear; /* Aplica la animación 'rotarSuave' durante 5 segundos, la repite infinitamente, con un movimiento constante */
-  }
-  
-
+        .animacion-rotar-suave {
+            animation: rotarSuave 5s infinite linear; /* Aplica la animación 'rotarSuave' durante 5 segundos, la repite infinitamente, con un movimiento constante */
+        }
     </style>
 
 </head>
@@ -118,11 +119,11 @@
     
     <h1>esta es mi blog uwu</h1>
     
-<p>
-    Advertencia: este blog es una paradoja interdimensional. La idea para crearlo se encontró en un futuro post que aún no he escrito, 
-    y el código que lo sostiene es el eco de una estrella que todavía no ha nacido. Al entrar, no estás simplemente leyendo texto;
-    estás navegando por un universo de bolsillo que existe solo porque tú has decidido que exista. El final de la página es, en realidad, su comienzo.
-</p>
+    <p>
+        Advertencia: este blog es una paradoja interdimensional. La idea para crearlo se encontró en un futuro post que aún no he escrito, 
+        y el código que lo sostiene es el eco de una estrella que todavía no ha nacido. Al entrar, no estás simplemente leyendo texto;
+        estás navegando por un universo de bolsillo que existe solo porque tú has decidido que exista. El final de la página es, en realidad, su comienzo.
+    </p>
 
     <p>Ahora estoyYY aprendiendo a usar HTML y CSS  tambien c++ y c</p>
 
